@@ -40,6 +40,9 @@ spec:
     - new
     image: quay.io/coreos/etcd:latest
     name: etcd0
+    resources:
+      requests:
+      cpu: "350m"
     ports:
     - containerPort: 2379
       name: client
@@ -99,6 +102,9 @@ spec:
     - new
     image: quay.io/coreos/etcd:latest
     name: etcd1
+    resources:
+      requests:
+      cpu: "350m"
     ports:
     - containerPort: 2379
       name: client
@@ -158,6 +164,9 @@ spec:
     - new
     image: quay.io/coreos/etcd:latest
     name: etcd2
+    resources:
+      requests:
+      cpu: "350m"
     ports:
     - containerPort: 2379
       name: client
