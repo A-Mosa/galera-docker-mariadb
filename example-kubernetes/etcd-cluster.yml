@@ -51,6 +51,8 @@ spec:
       name: server
       protocol: TCP
   restartPolicy: Never
+  nodeSelector:
+    micado.eu/node_type: galera-vm
 
 ---
 
@@ -113,7 +115,8 @@ spec:
       name: server
       protocol: TCP
   restartPolicy: Never
-
+  nodeSelector:
+    micado.eu/node_type: galera-vm
 ---
 
 apiVersion: v1
@@ -175,7 +178,8 @@ spec:
       name: server
       protocol: TCP
   restartPolicy: Never
-
+  nodeSelector:
+    micado.eu/node_type: galera-vm
 ---
 
 apiVersion: v1
