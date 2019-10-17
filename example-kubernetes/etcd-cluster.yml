@@ -40,9 +40,9 @@ spec:
     - new
     image: quay.io/coreos/etcd:latest
     name: etcd0
-    resources:
-      requests:
-      cpu: "350m"
+    #resources:
+      #requests:
+      #cpu: "350m"
     ports:
     - containerPort: 2379
       name: client
@@ -51,8 +51,8 @@ spec:
       name: server
       protocol: TCP
   restartPolicy: Never
-  nodeSelector:
-    micado.eu/node_type: galera-vm
+  #nodeSelector:
+    #micado.eu/node_type: galera-vm
 
 ---
 
